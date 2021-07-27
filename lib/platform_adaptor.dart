@@ -9,6 +9,7 @@ const widescreenBreakPoint = 1500;
 /// Any Screen/Page that is rendered differently over android and desktop.
 /// [narrowLayout] : returned on mobile view (below 768 pixels)
 /// [wideLayout] : returned on desktop view (above 1024 pixels)
+// ignore: non_constant_identifier_names
 PlatformAdaptor({
   loading: false,
   required Function narrowLayout,
@@ -31,6 +32,7 @@ PlatformAdaptor({
 /// Any Widget that is rendered differently over android and desktop.
 /// [narrowLayout] : returned on mobile view (below 768 pixels)
 /// [wideLayout] : returned on desktop view (above 1024 pixels)
+// ignore: non_constant_identifier_names
 PlatformWidgetAdaptor({
   loading: false,
   required Function narrowLayout,
@@ -53,6 +55,7 @@ PlatformWidgetAdaptor({
 /// Any Widget that changes over a breakpoint within a widget.
 /// [narrowLayout] : returned on widget width being less than breakpoint.
 /// [wideLayout] : returned on widget width being more than breakpoint.
+// ignore: non_constant_identifier_names
 Widget WidgetAdaptor({
   loading: false,
   required Widget narrowLayout,
@@ -74,10 +77,11 @@ Widget WidgetAdaptor({
 /// Any settings that changes over android and desktop.
 /// [narrowLayout] : returned on mobile view (below 768 pixels)
 /// [wideLayout] : returned on desktop view (above 1024 pixels)
+// ignore: non_constant_identifier_names
 dynamic SettingsAdaptor({
   required BuildContext context,
-  dynamic narrowLayout: null,
-  dynamic wideLayout: null,
+  dynamic narrowLayout,
+  dynamic wideLayout,
   bool isCallable: false,
 }) {
   double width = MediaQuery.of(context).size.width;
