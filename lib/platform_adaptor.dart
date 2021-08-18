@@ -11,7 +11,7 @@ const widescreenBreakPoint = 1500;
 /// [wideLayout] : returned on desktop view (above 1024 pixels)
 // ignore: non_constant_identifier_names
 PlatformAdaptor({
-  loading: false,
+  // loading: false,
   required Function narrowLayout,
   required Function wideLayout,
 }) {
@@ -34,7 +34,7 @@ PlatformAdaptor({
 /// [wideLayout] : returned on desktop view (above 1024 pixels)
 // ignore: non_constant_identifier_names
 PlatformWidgetAdaptor({
-  loading: false,
+  // loading: false,
   required Function narrowLayout,
   required Function wideLayout,
 }) {
@@ -57,7 +57,7 @@ PlatformWidgetAdaptor({
 /// [wideLayout] : returned on widget width being more than breakpoint.
 // ignore: non_constant_identifier_names
 Widget WidgetAdaptor({
-  loading: false,
+  // loading: false,
   required Widget narrowLayout,
   required Widget wideLayout,
   double breakPoint: 400,
